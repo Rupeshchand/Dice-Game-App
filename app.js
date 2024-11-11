@@ -23,6 +23,7 @@ rollBtn.addEventListener("click",()=>{
     if(diceRoll == 1){
         document.querySelector(`#current--${currentPlayer}`).textContent = 0;
         currentPlayer = currentPlayer === 0 ? 1 : 0;
+        console.log(currentPlayer);
         currentScore = 0;
         playerOne.classList.toggle("player--active");
         playerTwo.classList.toggle("player--active")
@@ -56,6 +57,7 @@ holdBtn.addEventListener("click",()=>{
         playerTwo.classList.toggle("player--active");
     }
 })
+
 // resetting the entire game and player 1 as current player
 newGameBtn.addEventListener("click",()=>{
     currentScore = 0;
