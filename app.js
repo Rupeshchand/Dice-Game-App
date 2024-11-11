@@ -45,8 +45,8 @@ holdBtn.addEventListener("click",()=>{
         document.querySelector(`.player--${currentPlayer}`).classList.add("player-wins");
         rollBtn.disabled = true;
         holdBtn.disabled = true;
-        document.querySelector(`.player--${currentPlayer}`).textContent = "I won the game";
-        document.querySelector(`.player--${currentPlayer}`).textContent.style.color = "white"
+        // document.querySelector(`.player--${currentPlayer}`).textContent = "I won the game";
+        // document.querySelector(`.player--${currentPlayer}`).textContent.style.color = "white"
     }
     else{
         currentScore = 0;
